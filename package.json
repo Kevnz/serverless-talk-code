@@ -1,0 +1,28 @@
+{
+  "name": "serverless-talk-code",
+  "version": "1.0.0",
+  "description": "Code for serverless talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevnz/serverless-talk-code.git"
+  },
+  "keywords": [
+    "serverless",
+    "aws",
+    "lambda"
+  ],
+  "author": "Kevin Isom <kevin.isom@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kevnz/serverless-talk-code/issues"
+  },
+  "homepage": "https://github.com/Kevnz/serverless-talk-code#readme",
+  "devDependencies": {
+    "@kev_nz/eslint-config": "^4.0.0",
+    "eslint": "^6.2.1"
+  }
+}
