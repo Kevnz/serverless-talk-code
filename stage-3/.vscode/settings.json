@@ -1,0 +1,76 @@
+{
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#202f3f",
+    "titleBar.inactiveBackground": "#202f3fcc",
+    "titleBar.activeForeground": "#ff9500",
+    "titleBar.inactiveForeground": "#ff9500cc",
+    "titleBar.border": "#ff9500",
+    "activityBar.foreground": "#ff9500",
+    "activityBar.background": "#202f3f",
+    "activityBarBadge.foreground": "#fff",
+    "tab.activeBorder": "#202f3f",
+    "tab.activeBorderTop": "#202f3f",
+    "tab.activeBackground": "#000",
+    "statusBar.background": "#202f3f",
+    "statusBar.border": "#ff9500",
+    "statusBar.foreground": "#ff9500"
+  },
+  "vsicons.presets.jsOfficial": true,
+  "vsicons.presets.jsonOfficial": true,
+  "vsicons.associations.folders": [
+    {
+      "icon": "view",
+      "extensions": [
+        "ui"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "helper",
+      "extensions": [
+        "tasks"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "video",
+      "extensions": [
+        "casting"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "db",
+      "extensions": [
+        "queries",
+        "migrations"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "api",
+      "extensions": [
+        "core"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "component",
+      "extensions": [
+        "features"
+      ],
+      "filename": true,
+      "format": "svg"
+    }
+  ]
+}

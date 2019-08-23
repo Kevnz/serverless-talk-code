@@ -1,0 +1,1 @@
+# Use DynamoDB with Serverless functions
