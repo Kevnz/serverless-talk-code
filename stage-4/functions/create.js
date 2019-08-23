@@ -1,5 +1,5 @@
-const uuid = require('uuid');
-const dynamodb = require('./dynamodb');
+const uuid = require('uuid')
+const dynamodb = require('./dynamodb')
 
 module.exports = {
   method: 'post',
@@ -14,15 +14,15 @@ module.exports = {
       try {
         console.log('the post is hit')
         console.log('payload', r.payload)
-        const timestamp = new Date().getTime();
-        const data = r.payload;
+        const timestamp = new Date().getTime()
+        const data = r.payload
         console.log('data', data)
-        if ( typeof data.text !== 'string') {
-          console.log('Validation Failed');
+        if (typeof data.text !== 'string') {
+          console.log('Validation Failed')
           return {
             statusCode: 400,
             headers: { 'Content-Type': 'text/plain' },
-            body: 'Couldn\'t create the todo item.',
+            body: "Couldn't create the todo item.",
           }
         }
         console.log('passed validation')
@@ -35,22 +35,19 @@ module.exports = {
             createdAt: timestamp,
             updatedAt: timestamp,
           },
-        };
+        }
         console.log('item params', params)
         const item = await dynamodb.put(params).promise()
         console.log('item', item)
         return params.Item
       } catch (err) {
         console.log('sad fail')
-         console.log('error', err)
-         return {
-           failed: true,
-           error: err
-         }
+        console.log('error', err)
+        return {
+          failed: true,
+          error: err,,
+        }
       }
     },
   },
 }
-
-
-
