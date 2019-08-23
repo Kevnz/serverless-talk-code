@@ -1,0 +1,25 @@
+{
+  "name": "stage-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "export SLS_DEBUG=* && sls offline start",
+    "deploy:dev": "export STAGE=dev && serverless deploy --stage dev",
+    "deploy:test": "export STAGE=qa && export SLS_DEBUG=* && serverless deploy --stage qa",
+    "deploy:prod": "export STAGE=prod && serverless deploy --stage prod"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^18.3.2",
+    "lalalambda": "^1.0.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.50.0",
+    "serverless-offline": "^5.10.1"
+  }
+}
