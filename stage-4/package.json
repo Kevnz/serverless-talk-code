@@ -1,0 +1,27 @@
+{
+  "name": "stage-4-offline-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "export SLS_DEBUG=* && sls offline start",
+    "deploy:dev": "export STAGE=dev && serverless deploy --stage dev",
+    "deploy:test": "export STAGE=qa && export SLS_DEBUG=* && serverless deploy --stage qa",
+    "deploy:prod": "export STAGE=prod && serverless deploy --stage prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^18.3.2",
+    "aws-sdk": "^2.515.0",
+    "lalalambda": "^1.0.0",
+    "serverless-dynamodb-local": "^0.2.38",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "serverless": "^1.50.0",
+    "serverless-offline": "^5.10.1"
+  }
+}
