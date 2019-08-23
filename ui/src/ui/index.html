@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My App</title>
+  <title>ToDo UI</title>
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -22,9 +22,39 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
+
+  <style>
+    .loading-indicator {
+      display: block;
+      width: 128px;
+      height: 128px;
+    }
+
+    .loading-indicator:after {
+      content: " ";
+      display: block;
+      width: 46px;
+      height: 46px;
+      margin: 1px;
+      border-radius: 50%;
+      border: 5px solid #363636;
+      border-color: #363636 transparent #363636 transparent;
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    @keyframes lds-dual-ring {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
-<body class="has-static-navigation-view">
+<body class="">
   <div id="root"></div>
   <script defer src="https://unpkg.com/@fortawesome/fontawesome-free@5.10.1/js/fontawesome.min.js"></script>
 </body>

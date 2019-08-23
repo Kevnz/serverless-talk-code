@@ -10,9 +10,9 @@ export default class App extends Component {
   render() {
     return (
       <Fragment>
-        <NavBar isPrimary isFixedTop>
+        <NavBar isWarning isFixedTop>
           <NavBarBrand
-            src="/flames.png"
+            src="/favicon-32x32.png"
             href="/"
             target="navTarget"
             width="32"
@@ -28,6 +28,6 @@ export default class App extends Component {
           </Router>
         </React.Suspense>
       </Fragment>
-  )
+    )
   }
 }
