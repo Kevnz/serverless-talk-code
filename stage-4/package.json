@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^18.3.2",
+    "@hapi/hapi": "^19.1.1",
     "aws-sdk": "^2.515.0",
     "lalalambda": "^1.0.0",
     "serverless-dynamodb-local": "^0.2.38",
