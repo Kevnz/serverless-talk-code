@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^18.3.2",
-    "aws-sdk": "^2.515.0",
+    "aws-sdk": "^2.814.0",
     "lalalambda": "^1.0.0",
     "uuid": "^3.3.3"
   },
