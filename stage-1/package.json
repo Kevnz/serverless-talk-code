@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^18.3.2",
-    "lalalambda": "^1.0.0"
+    "lalalambda": "^1.3.0"
   }
 }
