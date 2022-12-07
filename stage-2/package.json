@@ -19,7 +19,7 @@
     "lalalambda": "^1.0.0"
   },
   "devDependencies": {
-    "serverless": "^1.50.0",
+    "serverless": "^3.25.1",
     "serverless-offline": "^5.10.1"
   }
 }
